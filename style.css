@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 6rem;
+    font-size: 20px;
+}
+input[type="checkbox"]:checked + label{
+    font-weight: bold;
+    background-color: #4CAF5023;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    outline: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+}
+input[type="checkbox"]:hover + label {
+    background-color: #4CAF5026;
+    transition: background-color 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.5s;
+    transition: text-decoration-thickness 0.5s;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+
+}
+  /* radio  */
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    background-color: #4CAF5023;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input[type="radio"]:focus + label {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    outline: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+}
+input[type="radio"]:hover + label {
+    background-color: #4CAF5026;
+    transition: background-color 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.5s;
+    transition: text-decoration-thickness 0.5s;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+
+}
+/* submit  */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s ;
+    width: 100%;
+    @media (min-width : 768px) {
+        width: auto;
+    }
+}
+button:hover {
+    background-color: #0fb600;
+    transition: background-color 2s ease-in-out ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+    text-decoration-color: #14d70266;
+    font-weight: bold;
+    text-decoration-style: double;
+    text-decoration-thickness: 0.01px;
+    transition: text-decoration-color 0.5s;
+}
+label {
+    font-size: 16px;
+    cursor: pointer;
+    transition: font-size 0.5s;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+
+}
+.container {
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    background-color: #f2f2f2;
+    &:hover{
+        background-color: #e6e6e6;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+}
